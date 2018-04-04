@@ -1,0 +1,10 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - ./gradlew build
+artifacts:
+  files:
+    - build/libs/cdk-manual-test-spring-boot-0.1.jar
+  discard-paths: yes
