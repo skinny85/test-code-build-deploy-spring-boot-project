@@ -7,4 +7,5 @@ phases:
 artifacts:
   files:
     - build/libs/cdk-manual-test-spring-boot-0.1.jar
+    - appspec.yml
   discard-paths: yes
