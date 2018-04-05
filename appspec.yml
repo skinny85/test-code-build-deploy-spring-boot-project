@@ -5,17 +5,17 @@ files:
     destination: /var/cdk-app/
 hooks:
   ApplicationStop:
-    - location: scripts/stop_server.sh
+    - location: stop_server.sh
       timeout: 300
       runas: root
   BeforeInstall:
-    - location: scripts/install_dependencies.sh
+    - location: install_dependencies.sh
       timeout: 300
       runas: root
-    - location: scripts/create_or_update_service.sh
+    - location: create_or_update_service.sh
       timeout: 300
       runas: root
   ApplicationStart:
-    - location: scripts/start_server.sh
+    - location: start_server.sh
       timeout: 300
       runas: root

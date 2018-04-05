@@ -8,4 +8,5 @@ artifacts:
   files:
     - build/libs/cdk-manual-test-spring-boot-0.1.jar
     - appspec.yml
+    - scripts/*
   discard-paths: yes
