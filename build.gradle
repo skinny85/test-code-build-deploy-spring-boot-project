@@ -23,6 +23,10 @@ repositories {
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
+bootJar {
+    launchScript()
+}
+
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
     testCompile("junit:junit")
