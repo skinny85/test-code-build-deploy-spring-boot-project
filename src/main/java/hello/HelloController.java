@@ -12,7 +12,7 @@ import static java.lang.String.format;
 public class HelloController {
     @RequestMapping("/")
     public String index() {
-        return format("Greetings from Spring Boot - now with integ tests! The current date-time is: '%s'.",
+        return format("Greetings from the AWS CDK! The current date-time is: '%s'.",
                 Instant.now().atZone(ZoneId.of("America/Los_Angeles")).toString());
     }
 }
