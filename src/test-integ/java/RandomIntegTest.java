@@ -7,8 +7,6 @@ import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.Optional;
-
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class RandomIntegTest {
@@ -40,8 +38,9 @@ public class RandomIntegTest {
 
     @Test
     public void example_integ_test() {
-        String response = new RestTemplate().exchange(url,
-                HttpMethod.GET, new HttpEntity<>((String) null), String.class).getBody();
+        String response = new RestTemplate()
+                .exchange(url, HttpMethod.GET, new HttpEntity<>((String) null), String.class)
+                .getBody();
 
         assertThat(response).contains("Greetings from the AWS CDK");
     }
